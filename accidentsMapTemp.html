@@ -24,43 +24,100 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
   $( function() {
+  	var convfact = parseFloat(($(window).width())/100);
+  	var convfacth = parseFloat(($(window).height())/100);
+  	var top = convfact*3.0;
+  	var width = convfact*31.0;
+  	var height = convfacth*30.0;
     $( "#dialog123" ).dialog({
-      autoOpen: false
+      autoOpen: false,
+      show: {
+            effect: 'fade',
+            duration: 1000
+        }
+
     });
  
     $( "#opener123" ).on( "click", function() {
+      if ( $(window).height()*0.3 < 200.0)
+      {
+	
+      	return;
+      }
+      else{
       $( "#dialog123" ).dialog( "open" );
+      $("#headofpage").addClass("yellowhead");
+      }
     });
   } );
       
       $( function() {
     $( "#dialog223" ).dialog({
-      autoOpen: false
+      autoOpen: false,
+      show: {
+            effect: 'fade',
+            duration: 1000
+        }
     });
  
     $( "#opener223" ).on( "click", function() {
+      if ( $(window).height()*0.3 < 200.0)
+      {
+      	
+      	return;
+      }
+      else{
       $( "#dialog223" ).dialog( "open" );
+      $("#headofpage").addClass("yellowhead");
+      }
     });
   } );
       
       $( function() {
     $( "#dialog323" ).dialog({
-      autoOpen: false
+      autoOpen: false,
+      show: {
+            effect: 'fade',
+            duration: 1000
+        }
     });
  
     $( "#opener323" ).on( "click", function() {
+		if ( $(window).height()*0.3 < 200.0)
+      {
+      	
+      	return;
+      }
+      else{
       $( "#dialog323" ).dialog( "open" );
+      $("#headofpage").addClass("yellowhead");
+      }
     });
   } );
       $( function() {
     $( "#dialog423" ).dialog({
-      autoOpen: false
+      autoOpen: false,
+      show: {
+            effect: 'fade',
+            duration: 1000
+        }
     });
  
     $( "#opener423" ).on( "click", function() {
+		if ( $(window).height()*0.3 < 200.0)
+      {
+      	
+      	return;
+      }
+      else{
       $( "#dialog423" ).dialog( "open" );
+      $("#headofpage").addClass("yellowhead");
+      }
     });
   } );
+  $(".ui-dialog-titlebar-close").click(function(){
+  	$("#headofpage").removeClass("yellowhead");
+  });
   </script>
         
         <script type="text/javascript">
@@ -400,7 +457,6 @@ document.getElementById('go').innerHTML = "<p style='text-align:center; font-siz
                     <path style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:4,8;stroke-dashoffset:0;marker-start:url(#Arrow2Mstart)" d="m 810.15126,1271.9816 37.71277,37.7128" id="path7364" inkscape:connector-curvature="0"></path>
                    
                     <path style="fill:none;stroke:#000000;stroke-width:1.6;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" d="m 546.42802,1304.5561 21.13257,1.3723 7.41013,2.7445 3.56783,-1.3723 2.1956,-7.4101 5.48898,-3.8423 10.70351,-0.2744 6.86122,0.8233 7.13568,3.2934 9.05682,-12.0757 4.39118,-1.0978 6.58678,2.7444 3.29339,1.0978 1.92114,-0.5489 1.0978,-2.1955 -0.27445,-15.3692 0.5489,-2.1956 1.92114,-0.8233 30.73829,-4.9401 1.64669,1.3722 1.0978,2.7445 2.19559,0.5489 3.56784,-2.7445 3.29339,-7.959 -1.6467,-1.0978 -0.82334,-2.7445 1.64669,-3.2934 4.66563,-3.2934 4.11674,-0.2744 3.01894,1.3722 0.5489,3.5679 0.82334,3.0189 4.39119,2.1956 4.11673,-0.2744 4.66564,2.7444 2.47004,2.7445 0.5489,-4.1167 0.27445,-4.1167 -1.6467,-1.9212 -6.86122,-1.6467 -3.84229,-2.7445 0,-2.1956 -0.27445,-1.6466 3.01894,1.0978 3.84229,1.9211 1.92114,-1.3723 0.82335,-4.94 2.19559,-0.8234 3.01894,2.7445 4.39118,3.0189 4.66564,0.5489 5.21453,-8.7823 9.33127,0 6.03787,-3.019 1.6467,-2.1956 5.48898,-1.0978 7.95902,-4.6656 2.74449,-3.2934 -0.5489,-3.2934 2.47004,-6.3123 2.47005,-3.5678 6.86122,-1.9212 4.39119,-2.7445 2.19559,-4.1167" id="path3418" inkscape:path-effect="#path-effect3420" inkscape:original-d="m 546.42802,1304.5561 21.13257,1.3723 7.41013,2.7445 3.56783,-1.3723 2.1956,-7.4101 5.48898,-3.8423 10.70351,-0.2744 6.86122,0.8233 7.13568,3.2934 9.05682,-12.0757 4.39118,-1.0978 6.58678,2.7444 3.29339,1.0978 1.92114,-0.5489 1.0978,-2.1955 -0.27445,-15.3692 0.5489,-2.1956 1.92114,-0.8233 30.73829,-4.9401 1.64669,1.3722 1.0978,2.7445 2.19559,0.5489 3.56784,-2.7445 3.29339,-7.959 -1.6467,-1.0978 -0.82334,-2.7445 1.64669,-3.2934 4.66563,-3.2934 4.11674,-0.2744 3.01894,1.3722 0.5489,3.5679 0.82334,3.0189 4.39119,2.1956 4.11673,-0.2744 4.66564,2.7444 2.47004,2.7445 0.5489,-4.1167 0.27445,-4.1167 -1.6467,-1.9212 -6.86122,-1.6467 -3.84229,-2.7445 0,-2.1956 -0.27445,-1.6466 3.01894,1.0978 3.84229,1.9211 1.92114,-1.3723 0.82335,-4.94 2.19559,-0.8234 3.01894,2.7445 4.39118,3.0189 4.66564,0.5489 5.21453,-8.7823 9.33127,0 6.03787,-3.019 1.6467,-2.1956 5.48898,-1.0978 7.95902,-4.6656 2.74449,-3.2934 -0.5489,-3.2934 2.47004,-6.3123 2.47005,-3.5678 6.86122,-1.9212 4.39119,-2.7445 2.19559,-4.1167" inkscape:connector-curvature="0"></path>
-                </svg>
                 <div class="legend" style="position: fixed;z-index: 10;top: 85vh; right: 28vw; margin: 0px; padding: 5px; border: 2px dashed #000;">
     <div id = "inlegend" style="width: 100%; text-align: center;">Legend:<br/><em>(Deaths per lakh)</em></div>
     <table>
@@ -441,6 +497,9 @@ document.getElementById('go').innerHTML = "<p style='text-align:center; font-siz
     </table>
 </div>
 </div>
+                
+                </svg>
+                
             </div>
              <div class="overlayer"></div>
         <div class="dialog" style="width: 60vw; margin: auto;">
@@ -533,8 +592,8 @@ document.getElementById('go').innerHTML = "<p style='text-align:center; font-siz
                     <circle id="svgkacircle" r="18" cx="20" cy="20"></circle>
                 </svg>
                 <div class="accident-number1" style="width: 40px; height: 40px; border-radius: 20px; right: 150px; top: 0; position: absolute; background-color: #f06464;padding-top: 5px;"></div>
-                <div class="injury-number1" style="width: 40px; height: 40px; border-radius: 20px; right: 100px; top: 0; position: absolute; background-color: #649064;padding-top: 5px;"></div>
-                <div class="kill-number1" style="width: 40px; height: 40px; border-radius: 20px; right: 50px; top: 0; position: absolute; background-color: #6464f0;padding-top: 5px;"></div>
+                <div class="injury-number1" style="width: 40px; height: 40px; border-radius: 20px; right: 100px; top: 0; position: absolute; background-color: #f4bf42;padding-top: 5px;"></div>
+                <div class="kill-number1" style="width: 40px; height: 40px; border-radius: 20px; right: 50px; top: 0; position: absolute; background-color: #649964;padding-top: 5px;"></div>
             </div>
             </div>
             
@@ -569,10 +628,12 @@ document.getElementById('go').innerHTML = "<p style='text-align:center; font-siz
   						$(".overlayer").show(0).delay(40).hide(0);
   						$(".overlayer").show(0).delay(70).hide(0);
   						$(".dialog").delay(200).hide();
-						document.getElementById('popup').style.display="block";
-						$("#popup").css("display","block");
+						$("#popup").fadeIn(1000);
+						//$("#headofpage").css("backgroundColor","#f4bf42");
+						$("#headofpage").delay(1000).addClass("yellowhead");
 						document.getElementById('closepopup').onclick = function() {
 							document.getElementById('popup').style.display="none";
+							 $("#headofpage").removeClass("yellowhead");
 						};
 						
 					};
@@ -617,7 +678,7 @@ document.getElementById('go').innerHTML = "<p style='text-align:center; font-siz
                                 <li>
                                     <span>Feb 2017</span>
                                     <div id="dialog223" title="'Don't look away, it may save your life'">
-  <p>To avoid jams, Delhi Development Authority authorised Variable message signs to be put at use. These are digital boards which are used to relay messages to the commuters in the real time. They can relay messages like any barricades up ahead the lane etc. Cities like Hyderabad and Bengaluru have been using them since 2014. Delhi became a part of this when the message signs were launched in March 2017. Sardar Patel Marg, IGI Airport Road etc. were the victims to high traffic jams and to keep everything under control, these signs are used within every 50 kms or before every flyover.
+  <p>To avoid jams, Delhi Development Authority authorised Variable message signs to be put at use. These are digital boards which are used to relay messages to the commuters in the real time. They can relay messages like any barricades up ahead the lane etc. Delhi became a part of this when the message signs were launched in March 2017. Sardar Patel Marg, IGI Airport Road etc. were the victims to high traffic jams and to keep everything under control, these signs are used within every 50 kms or before every flyover.
 
 <a target="_blank" href="http://www.hindustantimes.com/delhi-news/delhi-to-get-led-warning-sign-boards-displaying-traffic-updates/story-YrjXTs3vuACNOK9hVWeeNI.html">Read More...</a>
 </p>
@@ -641,7 +702,7 @@ document.getElementById('go').innerHTML = "<p style='text-align:center; font-siz
                                     <span>Jan 2017</span>
                                     <div id="dialog423" title="'Terms like over speeding soon to fade away'">
   <p>Ministry of Road Transportation and Highways(MORTH) made it official on 31st January 2017 that all commercial vehicles must be equipped with speed governors. Speed Governors are devices which put an upper limit on the vehicle speed which is far less than the actual maximum speed of the vehicle. This way even if someone tries to cross the upper limit, it is impossible to actually do that.
-It limits the amount of air and fuel receiving to the engine when the speed is near the apparent maximum speed, putting a halt to increase in the speed. This initiative will save hundreds of lives during any case of mishappening.
+It limits the amount of air and fuel receiving to the engine when the speed is near the apparent maximum speed, putting a halt to increase in the speed.
  
 <a target="_blank" href="http://sites.ndtv.com/roadsafety/5-technology-solutions-can-make-indias-roads-safer-2647/">Read More...</a>
 </p>

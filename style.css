@@ -34,7 +34,7 @@ html, body {
     height: 100%;
     width: 100%;
     z-index: 2;
-    overflow  : hidden;
+    overflow : hidden;
 }
 
 .overlayer {
@@ -144,7 +144,7 @@ html, body {
     left: 0px;
     top: 0px;
     width: 26vw;
-    height: 19vw;
+    height: 30vh;
     margin-top: -1vw;
     overflow: hidden;
 }
@@ -184,8 +184,7 @@ html, body {
 
 #close {
     position: absolute;
-    right:0;
-
+    right: 0;
 }
 
 .countdown1 {
@@ -198,8 +197,8 @@ html, body {
     text-align: center;
 }
 
- .countdown-number {
-    position:fixed;
+.countdown-number {
+    position: fixed;
     top: 32vh;
     left: 47vw;
     color: white;
@@ -213,8 +212,7 @@ html, body {
     all: unset;
     position: fixed;
     top: 30vh;
-    right:49vw;
-
+    right: 49vw;
     width: 100px;
     height: 100px;
     transform: rotateY(-180deg) rotateZ(-90deg);
@@ -243,7 +241,6 @@ html, body {
 .hidden {
     display: none;
 }
-
 
 #piechartcarausel {
     -webkit-box-shadow: 1px 1px 21px -4px rgba(0,0,0,0.71);
@@ -279,6 +276,16 @@ html, body {
     font-size: 2.5vw;
 }
 
+.yellowhead {
+    background-color: #f4bf42 !important;
+    color: #393E41 !important;
+    -webkit-transition: background 1s linear, color 1s linear;
+    -moz-transition: background 1s linear, color 1s linear;
+    -ms-transition: background 1s linear, color 1s linear;
+    -o-transition: background 1s linear, color 1s linear;
+    transition: background 1s linear, color 1s linear;
+}
+
 #info9 {
     font-weight: 500;
     padding-left: 3vw;
@@ -308,7 +315,7 @@ html, body {
 
 #pieChart {
     width: 25vw;
-    right: 1.5vw; 
+    right: 1.5vw;
 }
 
 .topmenu {
@@ -317,14 +324,12 @@ html, body {
     height: 4.5vw;
     width: 25vw;
     right: 1.5vw;
-    z-index:5;
+    z-index: 5;
     background-color: black;
 }
 
 #credits {
     position: fixed;
-
-    
     z-index: 5;
     bottom: 1vh;
     text-align: center;
@@ -333,19 +338,23 @@ html, body {
     font-weight: 500;
     color: #F6F7EB;
 }
+
 .leftcredit {
-  left: 0;
-  width: 30.5vw;
+    left: 0;
+    width: 30.5vw;
 }
+
 .rightcredit {
-  right: 0;
-  width: 26.5vw;
+    right: 0;
+    width: 26.5vw;
 }
+
 .yearbutton {
     dislay: inline-block;
     background-color: black;
     border-radius: .5vw;
 }
+
 .yearbutton {
     display: inline-block;
     position: fixed;
@@ -356,226 +365,281 @@ html, body {
     color: white;
     width: 4vw;
     height: 2vw;
-    font-size:1em;
-    font-family:courier;
+    font-size: 1em;
+    font-family: courier;
     border: 1px solid #999;
 }
+
 .yearbutton:focus {
     outline: none !important;
-   
 }
 
 #2016 {
-    margin-left: -4vw; !important
-}
+    margin-left: -4vw;
+    !important }
+
 #2015 {
-    color:gray;
+    color: gray;
 }
+
 .totaltoll1 {
     position: fixed;
     top: 64vh;
 }
+
 .countdown1 {
-  position: fixed;
-  margin: auto;
-  right: 1vw;
-  z-index: 20;
-  top: 1vw; 
-  height: 60px;
-  width: 60px;
-  text-align: center;
+    position: fixed;
+    margin: auto;
+    right: 1vw;
+    z-index: 20;
+    top: 1vw;
+    height: 60px;
+    width: 60px;
+    text-align: center;
 }
 
 .countdown-number1 {
-  color: white;
-  display: inline-block;
-  line-height: 40px;
+    color: white;
+    display: inline-block;
+    line-height: 40px;
 }
 
 #svghai {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 40px;
-  height: 40px;
-  transform: rotateY(-180deg) rotateZ(-90deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    transform: rotateY(-180deg) rotateZ(-90deg);
 }
 
-#svgkacircle{
-  stroke-dasharray: 113px;
-  stroke-dashoffset: 0px;
-  stroke-linecap: round;
-  stroke-width: 2px;
-  stroke: white;
-  fill: none;
-  animation: countdown1 240s linear infinite forwards;
+#svgkacircle {
+    stroke-dasharray: 113px;
+    stroke-dashoffset: 0px;
+    stroke-linecap: round;
+    stroke-width: 2px;
+    stroke: white;
+    fill: none;
+    animation: countdown1 240s linear infinite forwards;
 }
 
 @keyframes countdown1 {
-  from {
-    stroke-dashoffset: 0px;
-  }
-  to {
-    stroke-dashoffset: 113px;
-  }
+    from {
+        stroke-dashoffset: 0px;
+    }
 
+    to {
+        stroke-dashoffset: 113px;
+    }
 }
+
 .countdown-numbe {
-    position:fixed;
+    position: fixed;
     color: white;
     font-family: courier;
     display: inline-block;
     top: 1.9vw;
     right: 1.28vw;
-    font-size:small;
+    font-size: small;
 }
 
 #popup {
--webkit-box-shadow: 5px 5px 21px -4px rgba(0,0,0,0.41);
--moz-box-shadow: 5px 5px 21px -4px rgba(0,0,0,0.41);
-box-shadow: 5px 5px 21px -4px rgba(,0,0,0.41);
-position: fixed;
-border-style: 5px solid #303036;
-font-family: 'Open Sans',sans-sherif;
-top: 8.3vw;
-right: 1.5vw;
-font-family: courier,"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-width: 25vw;
-height: 25vh;
-padding: 5px;
-padding-top: 3vh;
-background-color: #f4bf42;
-color: #f000;
-z-index: 60;
-display: none;
-
-font-size: 1.0em;
-text-align: center;
+    -webkit-box-shadow: 5px 5px 21px -4px rgba(0,0,0,0.41);
+    -moz-box-shadow: 5px 5px 21px -4px rgba(0,0,0,0.41);
+    box-shadow: 5px 5px 21px -4px rgba(,0,0,0.41);
+    position: fixed;
+    border-style: 5px solid #303036;
+    font-family: 'Open Sans',sans-sherif;
+    top: 8.3vw;
+    right: 1.5vw;
+    font-family: courier,"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    width: 25vw;
+    height: 25vh;
+    padding: 5px;
+    padding-top: 3vh;
+    background-color: #f4bf42;
+    color: #f000;
+    z-index: 60;
+    display: none;
+    font-size: 1.0em;
+    text-align: center;
 }
+
 .aboutuspop {
-  position: fixed;
+    position: fixed;
+    background-color: #f4bf42;
+    width: 65vw;
+    left: 50vw;
+    color: #393E41;
+    top: 15vh;
+    margin-left: -32.5vw;
+    border-radius: 2vh;
+    text-align: center;
+    z-index: 40;
+}
 
-  background-color:#f4bf42;
-  width: 65vw;
-  left: 50vw;
-  color: #393E41;
-  top:15vh;
-  margin-left: -32.5vw;
-  border-radius: 2vh;
-  text-align: center;
-  z-index: 40;
+#aboutustitle {
+    font-size: 2.4vw;
+    font-family: courier,"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-#aboutustitle{
-  font-size: 2.4vw;
-  font-family: courier,"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 
+.aboutusclose {
+    position: relative;
+    float: right;
 }
-.aboutusclose{
-  position: relative;
-  float:right;
 
+#legend table tr {
+    display: inline;
+    float: left;
 }
-#legend table tr{
-  display: inline;
-  float: left;
-}
+
 #latestrulesand {
-  display: block; 
-  float: left;
+    display: block;
+    float: left;
 }
+
 .latestrulespara {
-  margin-top:-1.7vw; 
-  padding-top: .7vw; 
-  font-size: 1.5vw;
+    margin-top: -1.7vw;
+    padding-top: .7vw;
+    font-size: 1.5vw;
 }
+
 * {
-                    box-sizing: border-box;
-                }
+    box-sizing: border-box;
+}
 
-                #indiamap9 {
-                    position: fixed;
-                    left: 31.5vw;
-                    top: 6vh;
-                    width: 41vw;
+#indiamap9 {
+    position: fixed;
+    left: 31.5vw;
+    top: 6vh;
+    width: 41vw;
+    border-radius: 2vw;
+    display: block;
+    float: left;
+}
 
-                    border-radius: 2vw;
-                    display: block;
-                    float: left;
+path {
+    fill: #ffffff;
+    transition: .6s fill;
+}
 
-                }
+path:hover.dropdown-content {
+    display: block;
+}
 
-                path {
-                    fill: #ffffff;
-                    transition: .6s fill;
-                }
+a {
+    text-decoration: none;
+    color: #111b47;
+}
 
-                path:hover.dropdown-content {
-                    display: block;
-                }
+a:hover {
+    border-bottom: 1px dashed #ED971F;
+    color: #ED971F;
+}
 
-                a {
-                    text-decoration: none;
-                    color: #111b47;
-                }
+.tn, #g4249, .hy, .go {
+    fill: #ff1111;
+}
 
-                a:hover {
-                    border-bottom: 1px dashed #ED971F;
-                    color: #ED971F;
-                }
+.rj, .ct, .hp, .pj, .kk {
+    fill: #f32f2f;
+}
 
-                 .tn, #g4249, .hy, .go {
-                    fill: #ff1111;
-                }
+.ch, .kl, .gj, .mp {
+    fill: #f64e4e;
+}
 
-                .rj, .ct, .hp, .pj, .kk {
-                    fill: #f32f2f;
-                }
+.uk, .ar, .dl, .ap, .od, .sk, .mh {
+    fill: #f96c6c;
+}
 
-                .ch, .kl, .gj, .mp {
-                    fill: #f64e4e; 
-                }
+.mgh, .mz, .wb, .jk, .am, .jh, .up {
+    fill: #fc8b8b;
+}
 
-                .uk, .ar, .dl, .ap, .od, .sk, .mh {
-                    fill: #f96c6c;
-                }
+.ng, .tr, .mani, .bh {
+    fill: #fdaaaa;
+}
 
-                .mgh, .mz, .wb, .jk, .am, .jh, .up {
-                    fill: #fc8b8b;
-                }
+.water {
+    fill: #C4E4F2;
+}
 
-                .ng, .tr, .mani, .bh {
-                    fill: #fdaaaa;
-                }
+.foreign {
+    fill: #f3dba8;
+}
 
-                .water {
-                    fill: #C4E4F2;
-                }
+/**** slider ****/
+#slider, ul {
+    height: 230px;
+}
 
-                .foreign {
-                    fill: #f3dba8;
-                }
-                
-                /**** slider ****/
-                #slider, ul {
-                    height: 230px;
-                }
+#rectangle-yellow {
+    height: 20px;
+    background: yellow;
+}
 
-                #rectangle-yellow {
-                    height: 20px;
-                    background: yellow;
-                }
+#rectangle-red {
+    height: 20px;
+    background: red;
+}
 
-                #rectangle-red {
-                    height: 20px;
-                    background: red;
-                }
+#rectangle-green {
+    height: 20px;
+    background: green;
+}
 
-                #rectangle-green {
-                    height: 20px;
-                    background: green;
-                }
+iframe {
+    width="560"; height="315" }
 
-                iframe {
-                  width="560";
-                   height="315"
-                }
+.ui-dialog, .ui-corner-all, .ui-widget, .ui-front, .ui-draggable, .ui-resizable {
+    top: 3.8vw !important;
+    left: 0vw !important;
+    width: 31vw !important;
+    height: 40vh !important;
+}
+
+.ui-dialog-titlebar {
+    top: .1vw !important;
+    padding: 0vw !important;
+    padding-top: 1px !important;
+    left : 0vw !important;
+    right: .1vw !important;
+    height: 2.5vw !important;
+    font-size: large !important;
+    width: 30vw !important;
+    background-color: black;
+    color: white;
+    font-family: courier;
+    text-align: center;
+    border-style: solid;
+    border-radius: 7px !important;
+}
+
+.ui-dialog-titlebar-close {
+    width: 1.5vw !important;
+    padding: 0vw !important;
+    left: 28vw !important;
+    top: 1vw !important;
+    background-color: white;
+    height: 1.5vw !important;
+}
+
+.ui-widget-content {
+    background-color: #f4bf42;
+    font-family: courier;
+}
+
+.ui-dialog-content > p {
+    margin-top : -.5vw !important;
+}
+
+.yellowhead {
+    background-color: #f4bf42;
+    color: #393E41;
+    -webkit-transition: background 1s linear, color 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -ms-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
