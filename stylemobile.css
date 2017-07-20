@@ -3,6 +3,8 @@ html, body {
     height: 100%;
     width: 100%;
     z-index: 2;
+    overflow: scroll !important;
+-webkit-overflow-scrolling: touch !important;
 }
 .overlayer {
     position: absolute;
@@ -12,17 +14,19 @@ html, body {
     background-color: rgba(255,255,255,0.85);
 }
 #headofpage {
+    position: fixed;
+    top: 0px;
     margin: -1vw;
-    height: 4.5vw;
+    width: 100%;
+    height: 5vw;
     z-index: 45;
     color: #F6F7EB;
     background: #393E41;
     text-align: center;
-    position: relative;
-    padding: 1.2vw;
+    padding: .5vw;
     font-family: courier,"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 500;
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
 
@@ -34,8 +38,9 @@ html, body {
     /*background of popup*/
 }
 
-#popup{
-    background-color: black;
+#popup, .countdown1{
+    display: none !important;
+
 }
  * {
      box-sizing: border-box;
@@ -47,5 +52,88 @@ html, body {
                     float: left;
                 }
 .dialog, .overlayer {
+    display: none;
+}
+html, body {
+    overflow: scroll;
+}
+#indiamap9 {
+                    width: 100%;
+                    float: left;
+
+                }
+
+path {
+                    fill: #ffffff;
+                    transition: .6s fill;
+                }
+
+                path:hover.dropdown-content {
+                    display: block;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #111b47;
+                }
+
+                a:hover {
+                    border-bottom: 1px dashed #ED971F;
+                    color: #ED971F;
+                }
+
+                 .tn, #g4249, .hy, .go {
+                    fill: #ff1111;
+                }
+
+                .rj, .ct, .hp, .pj, .kk {
+                    fill: #f32f2f;
+                }
+
+                .ch, .kl, .gj, .mp {
+                    fill: #f64e4e; 
+                }
+
+                .uk, .ar, .dl, .ap, .od, .sk, .mh {
+                    fill: #f96c6c;
+                }
+
+                .mgh, .mz, .wb, .jk, .am, .jh, .up {
+                    fill: #fc8b8b;
+                }
+
+                .ng, .tr, .mani, .bh {
+                    fill: #fdaaaa;
+                }
+
+                .water {
+                    fill: #C4E4F2;
+                }
+
+                .foreign {
+                    fill: #f3dba8;
+                }
+                
+                /**** slider ****/
+                #slider, ul {
+                    height: 230px;
+                }
+
+                #rectangle-yellow {
+                    height: 20px;
+                    background: yellow;
+                }
+
+                #rectangle-red {
+                    height: 20px;
+                    background: red;
+                }
+
+                #rectangle-green {
+                    height: 20px;
+                    background: green;
+                }
+
+.leftcredit {
     display: none;
 }

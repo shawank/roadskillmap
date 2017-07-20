@@ -34,6 +34,7 @@ html, body {
     height: 100%;
     width: 100%;
     z-index: 2;
+    overflow  : hidden;
 }
 
 .overlayer {
@@ -487,3 +488,89 @@ text-align: center;
   padding-top: .7vw; 
   font-size: 1.5vw;
 }
+* {
+                    box-sizing: border-box;
+                }
+
+                #indiamap9 {
+                    position: fixed;
+                    left: 31.5vw;
+                    top: 6vh;
+                    width: 41vw;
+
+                    border-radius: 2vw;
+                    display: block;
+                    float: left;
+
+                }
+
+                path {
+                    fill: #ffffff;
+                    transition: .6s fill;
+                }
+
+                path:hover.dropdown-content {
+                    display: block;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #111b47;
+                }
+
+                a:hover {
+                    border-bottom: 1px dashed #ED971F;
+                    color: #ED971F;
+                }
+
+                 .tn, #g4249, .hy, .go {
+                    fill: #ff1111;
+                }
+
+                .rj, .ct, .hp, .pj, .kk {
+                    fill: #f32f2f;
+                }
+
+                .ch, .kl, .gj, .mp {
+                    fill: #f64e4e; 
+                }
+
+                .uk, .ar, .dl, .ap, .od, .sk, .mh {
+                    fill: #f96c6c;
+                }
+
+                .mgh, .mz, .wb, .jk, .am, .jh, .up {
+                    fill: #fc8b8b;
+                }
+
+                .ng, .tr, .mani, .bh {
+                    fill: #fdaaaa;
+                }
+
+                .water {
+                    fill: #C4E4F2;
+                }
+
+                .foreign {
+                    fill: #f3dba8;
+                }
+                
+                /**** slider ****/
+                #slider, ul {
+                    height: 230px;
+                }
+
+                #rectangle-yellow {
+                    height: 20px;
+                    background: yellow;
+                }
+
+                #rectangle-red {
+                    height: 20px;
+                    background: red;
+                }
+
+                #rectangle-green {
+                    height: 20px;
+                    background: green;
+                }
