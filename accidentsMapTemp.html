@@ -1436,11 +1436,25 @@ Indian Road Safety Campaign, is currently registered as the road safety project 
 
 </script>
         	<div class = "animate animate-bounceInUp hidden" id = "youtube">
-				<div style="width: 560px;">
+				<div id ="youtube560">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/iPU4WXoCR2Q?list=UUC9OIqNPYnqsGQkG-JJLvxw" frameborder="0" allowfullscreen></iframe>	
                     <p style="font-size: 1em; color: #fff; text-align: center; font-family: Courier New">Have similar impactful stuff relating to road safety? Increase the outreach and impact of your videos by sharing them on this page. <a href="map_form.php" style="color: #f4f412;">Click here</a> to upload videos and other material.</p>
 				</div> 
 				</div>
+				<script>
+					if ($(window).width() > 500)
+					{
+						$("#youtube560").css("width","560px");
+						$("iframe").attr("width","560").attr("height","315");
+					}
+					if ($(window).width() < 500)
+					{
+
+						$("#youtube560").css("width","100%");
+						$("iframe").attr("width",$(window).width());
+					}
+					</script>
+
                 <!--<script type="text/javascript">
                     var popit = true;
                     window.onbeoreunloadf = function() { 
