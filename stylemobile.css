@@ -1,0 +1,51 @@
+html, body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+.overlayer {
+    position: absolute;
+    height: 120%;
+    width: 100%;
+    z-index: 40;
+    background-color: rgba(255,255,255,0.85);
+}
+#headofpage {
+    margin: -1vw;
+    height: 4.5vw;
+    z-index: 45;
+    color: #F6F7EB;
+    background: #393E41;
+    text-align: center;
+    position: relative;
+    padding: 1.2vw;
+    font-family: courier,"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 3vw;
+}
+
+
+.tooltipster-sidetip.tooltipster-punk .tooltipster-box {
+    border: 3px solid #3d5998;
+    border-bottom: 15px solid #3d5998;
+    /*colored line at popup bottom*/
+    background: rgba(238,238,238, 0.95);
+    /*background of popup*/
+}
+
+#popup{
+    background-color: black;
+}
+ * {
+     box-sizing: border-box;
+}
+
+ #indiamap9 {
+                    width: 100%; !important
+                    display: block;
+                    float: left;
+                }
+.dialog, .overlayer {
+    display: none;
+}
